@@ -13,12 +13,12 @@ public class SecondLevelGenericMethods<String, T, U, V> {
         this.element3 = element3;
     }
 
-    public void printElements(){
-        System.out.println("stringVariable = " + stringVariable + "element1 = " + element1 + "\n element2 = " + element2 + "\n element3 = " + element3);
+    public void printAttributes(){
+        System.out.println("stringVariable = " + stringVariable + ", element1 = " + element1 + ", element2 = " + element2 + ", element3 = " + element3);
     }
 
     @SafeVarargs
-    public final void printAllElements(String message, T... objects){
+    public final void printAll(String message, T... objects){
         System.out.println(message);
         for (T element : objects){
             System.out.println(element);
