@@ -10,10 +10,16 @@ public class Main {
         Person person1 = new Person("Joe", "Wright", 30);
         Person person2 = new Person("Laura", "Alvarez", 60);
         GenericMethods<String, Person, Integer> gm1 = new GenericMethods<>("Hello", person1, 10);
+        System.out.println("gm1 elements:");
         gm1.printElements();
-        GenericMethods<String, String, Integer> gm2 = new GenericMethods<>("Hello", "World", 10);
+        GenericMethods<String, String, Person> gm2 = new GenericMethods<>("Hello", "World", person2);
+        System.out.println("gm2 elements:");
         gm2.printElements();
-        GenericMethods<GenericMethods, Person, Person> gm3 = new GenericMethods<>(gm2, person1, person2);
+        GenericMethods<Integer, String, Person> gm3 = new GenericMethods<>(35, "World", person1);
+        System.out.println("gm3 elements:");
         gm3.printElements();
+        GenericMethods<GenericMethods, Person, Person> gm4 = new GenericMethods<>(gm2, person1, person2);
+        System.out.println("gm4 elements:");
+        gm4.printElements();
     }
 }

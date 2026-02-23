@@ -15,4 +15,12 @@ public class GenericMethods  <T, U, V> {
         System.out.println("element1 = " + element1 + "\n element2 = " + element2 + "\n element3 = " + element3);
     }
 
+    @Override
+    public String toString() {
+        return "GenericMethods{" +
+                "element1=" + element1 +
+                ", element2=" + element2 +
+                ", element3=" + element3 +
+                '}';
+    }
 }
