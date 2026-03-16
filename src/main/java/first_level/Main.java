@@ -20,12 +20,12 @@ public class Main {
         System.out.println("genericMethods elements:");
         genericObject2.printElements();
 
-        GenericMethods<Integer, String, Person> gm3 = new GenericMethods<>(35, "World", person1);
+        GenericMethods<Integer, String, Person> genericObject3 = new GenericMethods<>(35, "World", person1);
         System.out.println("gm3 elements:");
-        gm3.printElements();
+        genericObject3.printElements();
 
-        GenericMethods<GenericMethods, Person, Person> gm4 = new GenericMethods<>(genericObject2, person1, person2);
+        GenericMethods<GenericMethods, Person, Person> genericObject4 = new GenericMethods<>(genericObject2, person1, person2);
         System.out.println("gm4 elements:");
-        gm4.printElements();
+        genericObject4.printElements();
     }
 }
