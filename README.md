@@ -1,4 +1,4 @@
-# Tasca S1 06
+# Sprint 1.6: Generics
 
 ## Description
 
